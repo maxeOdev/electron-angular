@@ -12,7 +12,6 @@
     "electron": "electron .",
     "elecbuild": "ng build --prod && electron .",
     "make": "ng build --prod && electron-forge make"
-
   },
   "private": true,
   "dependencies": {
@@ -32,20 +31,21 @@
     "electron-squirrel-startup": "^1.0.0"
   },
   "devDependencies": {
-    "electron": "^5.0.2",
+    "@angular-devkit/build-angular": "~0.13.0",
+    "@angular/cli": "~7.3.8",
+    "@angular/compiler-cli": "~7.2.0",
+    "@angular/language-service": "~7.2.0",
     "@electron-forge/cli": "^6.0.0-beta.39",
     "@electron-forge/maker-deb": "^6.0.0-beta.39",
     "@electron-forge/maker-rpm": "^6.0.0-beta.39",
     "@electron-forge/maker-squirrel": "^6.0.0-beta.39",
     "@electron-forge/maker-zip": "6.0.0-beta.39",
-    "@angular-devkit/build-angular": "~0.13.0",
-    "@angular/cli": "~7.3.8",
-    "@angular/compiler-cli": "~7.2.0",
-    "@angular/language-service": "~7.2.0",
-    "@types/node": "~8.9.4",
     "@types/jasmine": "~2.8.8",
     "@types/jasminewd2": "~2.0.3",
+    "@types/node": "~8.9.4",
     "codelyzer": "~4.5.0",
+    "electron": "^5.0.2",
+    "electron-prebuilt-compile": "4.0.0",
     "jasmine-core": "~2.99.1",
     "jasmine-spec-reporter": "~4.2.1",
     "karma": "~4.0.0",
