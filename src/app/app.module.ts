@@ -5,11 +5,13 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { VideoComponent } from './video/video.component';
 import { HttpClientModule } from '@angular/common/http';
+import { VideoPlayerComponent } from './video-player/video-player.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    VideoComponent
+    VideoComponent,
+    VideoPlayerComponent
   ],
   imports: [
     BrowserModule,

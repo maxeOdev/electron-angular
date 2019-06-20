@@ -2,17 +2,14 @@
 const { app, BrowserWindow } = require('electron');
 const path = require('path');
 const { ipcMain } = require('electron');
-
-// const electron = require('electron');
-
+const { dialog } = require('electron');
 const DownloadManager = require('electron-download-manager');
-DownloadManager.register({
-  downloadFolder: app.getPath('downloads') + '/my-app'
-});
 
 //Single file download
 ipcMain.on('downloadfile', (event, arg) => {
-  console.log('exchange works', arg);
+  DownloadManager.register({
+    downloadFolder: app.getPath('downloads') + '/my-app'
+  });
   DownloadManager.download(
     {
       url: arg
@@ -80,3 +77,6 @@ app.on('activate', function() {
 
 // In this file you can include the rest of your app's specific main process
 // code. You can also put them in separate files and require them here.
+
+//To open a dialog and get selected path :
+//const selectedPath = dialog.showOpenDialog({ properties: ['openDirectory'] });
