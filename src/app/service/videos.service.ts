@@ -15,7 +15,7 @@ export class VideosService {
   fs: typeof fs;
 
   private downloadUrl = 'http://localhost:8083/api/download';
-  private uuid = 'd3ad875e-643c-4d01-87fa-a3ec08004175';
+  private uuid = 'd0399a6b-1fbe-4d4d-acff-55db57a709dd';
 
   constructor(private httpClient: HttpClient) {
     this.ipcRenderer = window.require('electron').ipcRenderer;
